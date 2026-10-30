@@ -1,0 +1,9 @@
+# Срочное исключение сервисов из PROD (пишет Jenkins ExcludeService MODE=urgent, чистит MODE=clear).
+# Kargo при промоушене в prod не переносит эти сервисы из Freight, а возвращает их файлы на коммит restoreFrom.
+# Пример:
+# excluded:
+#   core:
+#     task: TASK-123
+#     reason: INC-456
+#     restoreFrom: <коммит gitops-prod до релиза>
+excluded: {}
